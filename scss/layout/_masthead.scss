@@ -1,0 +1,76 @@
+// Styling for the masthead
+header.masthead {
+  text-align: center;
+  color: white;
+  background-image: url('../img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  .mastheadforeground {
+    background-image: url('../img/header-fg.png') !important;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    }
+  .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    .intro-lead-in {
+      font-size: 22px;
+      font-style: italic;
+      line-height: 22px;
+      margin-bottom: 25px;
+      @include serif-font;
+    }
+    .intro-heading {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 25px;
+      @include heading-font;
+    }
+  }
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid $primary; /* Blue */
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  animation: spin 3s linear infinite;
+  position: fixed;
+  z-index: 1100;
+}
+.loaderBG{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  z-index: 1099;
+}
+@media(min-width:768px) {
+  header.masthead {
+    .intro-text {
+      padding-top: 300px;
+      padding-bottom: 200px;
+      .intro-lead-in {
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        margin-bottom: 25px;
+        @include serif-font;
+      }
+      .intro-heading {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 50px;
+        @include heading-font;
+      }
+    }
+  }
+}
