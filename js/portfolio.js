@@ -63,12 +63,17 @@ $(document).ready(function(){
 
   $('.loader').fadeOut();
   $('.loaderBG').fadeOut();
+
+  onScroll();
 });
 
 var foreground = document.querySelector(".mastheadforeground");
-window.addEventListener("scroll", function(e) {
+window.addEventListener("scroll", onScroll);
+
+function onScroll(e) {
   var scroll = window.pageYOffset;
   //var translate = "translate(-" + scroll/1.1 + "px, 0px)";
-  var scale = "scale(" + scroll/200+ ")"
-  foreground.style.transform = scale;
-});
+  // var scale = "scale(" + scroll/200+ ")"
+  // foreground.style.transform = scale;
+  $(foreground).css("background-size",100+(scroll/50) + "%");
+}
