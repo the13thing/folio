@@ -70,6 +70,14 @@ $(document).ready(function(){
 var foreground = document.querySelector(".mastheadforeground");
 window.addEventListener("scroll", onScroll);
 
+$(document).bind('keyup', function (e) {
+  if (e.which == 39) {
+      $('.carousel').carousel('next');
+  } else if (e.which == 37) {
+      $('.carousel').carousel('prev');
+  }
+});
+
 function onScroll(e) {
   var scroll = window.pageYOffset;
   //var translate = "translate(-" + scroll/1.1 + "px, 0px)";
