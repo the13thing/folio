@@ -122,6 +122,10 @@ img::-moz-selection {
   background-color: #adb5bd;
 }
 
+.minHeight25 {
+  min-height: 25em;
+}
+
 #about {
   background-image: url("../img/about/bg.jpg") !important;
   background-size: cover;
