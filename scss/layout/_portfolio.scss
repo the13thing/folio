@@ -120,6 +120,7 @@
     height: 75px;
     cursor: pointer;
     background-color: transparent;
+    z-index: 600;
     &:hover {
       opacity: 0.3;
     }
