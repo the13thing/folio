@@ -39,6 +39,16 @@
           }
         }
       }
+      .img-container{
+        height: 20em;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+      }
+      .img-fluid {
+        width: 100%;
+        object-fit: cover;
+      }
     }
     .portfolio-caption {
       max-width: 400px;

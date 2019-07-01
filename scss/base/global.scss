@@ -36,8 +36,8 @@
   background-position-x: 100%;
 }
 
-#portfolioModalRally .modal-content{
-  background-image: url('../img/portfolio/rally/2.jpg') !important;
+.modal-content{
+  background-color:  $primary-transparent;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -47,6 +47,9 @@
   width: 100%;
 }
 
+.mt2 {
+  margin-top: 2em;
+}
 
 .carousel-indicators li {
   display: inline-block;

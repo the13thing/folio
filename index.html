@@ -143,7 +143,7 @@
   
 <section class="page-section" id="portfolio">
    <!-- start section portfolio -->
-   <div id="portfolio" class="text-center paddsection">
+   <div id="portfolioInner" class="text-center paddsection">
 
     <div class="container">
       <div class="row">
@@ -172,17 +172,19 @@
           <div class="portfolio-container">
 
             <div class="col-lg-4 col-md-6 portfolio-item portfolio-thumbnail all development">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModalAbc">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
                     <i class="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img class="img-fluid" src="img/portfolio/abc/1.png" alt="">
+                <div class="img-container">
+                  <img class="img-fluid" src="img/portfolio/abc/1.png" alt="">
+                </div>
               </a>
               <div class="portfolio-caption">
                 <h4>Aveiro Business Center</h4>
-                <p class="text-muted">Website</p>
+                <p class="text-muted">Development</p>
               </div>
             </div>
 
@@ -193,7 +195,7 @@
                     <i class="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img class="img-fluid" src="img/portfolio/rally/1.jpg" alt="">
+                <div class="img-container"><img class="img-fluid" src="img/portfolio/rally/1.jpg" alt=""></div>
               </a>
               <div class="portfolio-caption">
                 <h4>WRC Rally Portugal</h4>
@@ -201,18 +203,48 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item portfolio-thumbnail all development">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="col-lg-4 col-md-6 portfolio-item portfolio-thumbnail all videography">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModalIntro">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
                     <i class="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+                <div class="img-container"><img class="img-fluid" src="img/portfolio/intro/1.png" alt=""></div>
               </a>
               <div class="portfolio-caption">
-                <h4>Finish</h4>
-                <p class="text-muted">Identity</p>
+                <h4>Introduction</h4>
+                <p class="text-muted">Videography</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item portfolio-thumbnail all videography">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModalNazare">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <div class="img-container"><img class="img-fluid" src="img/portfolio/nazare/1.png" alt=""></div>
+              </a>
+              <div class="portfolio-caption">
+                <h4>APB Tour Nazare Pro 18</h4>
+                <p class="text-muted">Videography</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item portfolio-thumbnail all photography">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModalPhotos">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <div class="img-container"><img class="img-fluid" src="img/portfolio/photos/1.jpg" alt=""></div>
+              </a>
+              <div class="portfolio-caption">
+                <h4>Everyday Photos</h4>
+                <p class="text-muted">Photography</p>
               </div>
             </div>
 
@@ -228,15 +260,15 @@
 
   
   <!-- Skills -->
-  <section class="bg-gray page-section" id="skills">
+  <section class="bg-light page-section" id="skills">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase text-light">Skills</h2>
+          <h2 class="section-heading text-uppercase">Skills</h2>
           <h3 class="section-subheading text-muted"></h3>
         </div>
       </div>
-      <div class="row text-center text-light">
+      <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -266,7 +298,7 @@
   </section>
 
   <!-- Contact -->
-  <section class="page-section bg-dark" id="contact">
+  <section class="page-section bg-gray" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -311,7 +343,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer bg-dark">
+  <footer class="footer bg-gray">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4">
@@ -357,8 +389,8 @@
 
   <!-- Portfolio Modals -->
 
-  <!-- Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Modal ABC -->
+  <div class="portfolio-modal modal fade" id="portfolioModalAbc" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -368,42 +400,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
+              <div class="modal-body bg-light">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Aveiro Business Center's Website</h2>
                 <p class="item-intro text-muted">Fullstack Development</p>
@@ -412,6 +409,11 @@
                       <li data-target="#carouselAbc" data-slide-to="0" class="active"></li>
                       <li data-target="#carouselAbc" data-slide-to="1"></li>
                       <li data-target="#carouselAbc" data-slide-to="2"></li>
+                      <li data-target="#carouselAbc" data-slide-to="3"></li>
+                      <li data-target="#carouselAbc" data-slide-to="4"></li>
+                      <li data-target="#carouselAbc" data-slide-to="5"></li>
+                      <li data-target="#carouselAbc" data-slide-to="6"></li>
+                      <li data-target="#carouselAbc" data-slide-to="7"></li>
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -420,7 +422,7 @@
                       <div class="carousel-item">
                         <img class="d-block" src="img/portfolio/abc/1-mobile.png" alt="Homepage Mobile">
                       </div>
-                      <div class="carousel-item center">
+                      <div class="carousel-item">
                         <img class="d-block" src="img/portfolio/abc/bo.png" alt="Backoffice">
                       </div>
                       <div class="carousel-item">
@@ -448,7 +450,7 @@
                       <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <p>This was a project where a content management system was needed so the technology I chose was Netlify CMS. I started with a HugoGo template and adapted my components and visual elements accordingly. Most of the elements are editable in a user friendly backoffice.</p>
+                <p>This was a project where a content management system was needed so the technology I chose was Netlify CMS. I started with a HugoGo template and adapted my components and visual elements accordingly. The website is responsive, multilanguage and it has a user friendly backoffice as well.</p>
                 <ul class="list-inline">
                   <li>Date: June 2019</li>
                   <li>Client: Aveiro Business Center</li>
@@ -459,14 +461,13 @@
                   <i class="fas fa-times"></i>
                   Close Project</button>
               </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal 3 -->
+  <!-- Modal Rally -->
   <div class="portfolio-modal modal fade" id="portfolioModalRally" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -482,7 +483,7 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">WRC Rally Portugal 2019</h2>
                 <p class="item-intro text-muted">Videography/Photography</p>
-                <div id="carouselRally" class="carousel slide" data-ride="carousel">
+                <div id="carouselRally" class="carousel slide" data-ride="carousel" data-interval="false">
                     <ol class="carousel-indicators">
                       <li data-target="#carouselRally" data-slide-to="0" class="active"></li>
                       <li data-target="#carouselRally" data-slide-to="1"></li>
@@ -492,9 +493,13 @@
                       <li data-target="#carouselRally" data-slide-to="5"></li>
                       <li data-target="#carouselRally" data-slide-to="6"></li>
                       <li data-target="#carouselRally" data-slide-to="7"></li>
+                      <li data-target="#carouselRally" data-slide-to="8"></li>
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/walvtwjoiYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      <div class="carousel-item">
                         <img class="d-block" src="img/portfolio/rally/1.jpg" alt="">
                       </div>
                       <div class="carousel-item">
@@ -528,7 +533,7 @@
                       <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <p>This was a personal videography and photography project on Gois' dusty hills, at WRC Rally in Portugal. After a long, and I mean long hike under the harsh sun, I settled with a tripod, the camera and a microphone. Chainsaws, clouds of dust, loads of beer... oh and rally cars. This is pure rally!</p>
+                <p class="mt2">This was a personal videography and photography project on Gois' dusty hills, at WRC Rally in Portugal. After a long, and I mean long hike under the harsh sun, I settled with a tripod, the camera and a microphone. Chainsaws, clouds of dust, loads of beer... oh and rally cars. This is pure rally!</p>
                 <ul class="list-inline">
                   <li>Date: June 2019</li>
                   <li>Location: Gois, Portugal</li>
@@ -545,8 +550,10 @@
     </div>
   </div>
 
-  <!-- Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+  
+
+  <!-- Modal Intro -->
+  <div class="portfolio-modal modal fade" id="portfolioModalIntro" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -556,31 +563,56 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
+              <div class="modal-body bg-light">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2 class="text-uppercase">Introduction</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JhT31GBZVek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>I decided to mix some footage that I previously shot with some simple motion graphics and effects for a fast introduction of myself and my skills. From the footage to the song, everything in this video was created from scratch.</p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
+                  <li>Date: May 2019</li>
+                  <li>Category: Videography</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close Project</button>
               </div>
-            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Nazare -->
+  <div class="portfolio-modal modal fade" id="portfolioModalNazare" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+              <div class="modal-body bg-light">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">APB Tour Nazare Pro 18</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aq_niXr01Hg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Me and my friends spent a day at the beach watching the world bodyboard championship. I couldn't stop myself from bringing a tripod and camera and came up with this video. </p>
+                <ul class="list-inline">
+                  <li>Date: October 2018</li>
+                  <li>Category: Videography</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Modal Photos -->
+  <div class="portfolio-modal modal fade" id="portfolioModalPhotos" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -590,62 +622,100 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
+              <div class="modal-body bg-light">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2 class="text-uppercase">Everyday Photos</h2>
+                <div id="carouselPhotos" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselPhotos" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="1"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="2"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="3"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="4"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="5"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="6"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="7"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="8"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="9"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="10"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="11"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="12"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="13"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="14"></li>
+                    <li data-target="#carouselPhotos" data-slide-to="15"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block" src="img/portfolio/photos/1.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/2.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/3.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/4.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/5.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/6.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/7.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/8.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/9.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/10.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/11.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/12.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/13.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/14.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/15.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/portfolio/photos/16.jpg" alt="">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselPhotos" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselPhotos" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+              </div>                <p>These are some of my everyday photographs, not linked in any way, no caption, just what I see and what the camera captures. </p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
                   <li>Category: Photography</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close Project</button>
               </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
