@@ -61,9 +61,6 @@ $(document).ready(function(){
     portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
 
-  $('.loader').fadeOut();
-  $('.loaderBG').fadeOut();
-
   onScroll();
 });
 
@@ -85,3 +82,9 @@ function onScroll(e) {
   // foreground.style.transform = scale;
   $(foreground).css("background-size",100+(scroll/50) + "%");
 }
+
+
+$(window).on("load", function() {
+  $('.loader').fadeOut();
+  $('.loaderBG').fadeOut()});
+;
