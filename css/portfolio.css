@@ -512,6 +512,7 @@ header.masthead .intro-text .intro-heading {
   height: 75px;
   cursor: pointer;
   background-color: transparent;
+  z-index: 600;
 }
 
 .portfolio-modal .close-modal:hover {
