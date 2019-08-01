@@ -142,9 +142,7 @@ img::-moz-selection {
 }
 
 .modal-content {
-  background-color: rgba(59, 68, 93, 0.8);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  border-radius: 50px;
 }
 
 .modal-body {
