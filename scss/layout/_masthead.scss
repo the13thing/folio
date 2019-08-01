@@ -37,19 +37,35 @@ header.masthead {
   border: 16px solid #f3f3f3; /* Light grey */
   border-top: 16px solid $primary; /* Blue */
   border-radius: 50%;
-  width: 50%;
+  width: 25%;
   height: 50%;
   top: 25%;
-  left: 25%;
-  animation: spin 3s linear infinite;
+  left: 35%;
   position: fixed;
-  z-index: 1100;
+  z-index: 1100;animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
 }
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
 .loaderBG{
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba($color: #000000, $alpha: 0.5);
+  background-color: rgba($color: #000000, $alpha: 1);
   z-index: 1099;
 }
 @media(min-width:768px) {
