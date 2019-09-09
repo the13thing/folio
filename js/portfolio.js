@@ -62,6 +62,7 @@ $(document).ready(function(){
   });
 
   onScroll();
+  animate();
 });
 
 var foreground = document.querySelector(".mastheadforeground");
@@ -88,3 +89,30 @@ $(window).on("load", function() {
   $('.loader').fadeOut();
   $('.loaderBG').fadeOut()});
 ;
+
+function animate(){
+  $('.animate').css("opacity",0);
+  $('section').each(function(index,item){
+      var waypoint = new Waypoint({
+          element: $(item),
+          handler: function(direction) {
+              var delay = 0.1;
+              $(item).find('.animate').each(function(index,item){
+                  anime.timeline({loop: false})
+                  .add({
+                    targets: item,
+                    translateY: [100,0],
+                    translateZ: 0,
+                    opacity: [0,1],
+                    easing: "easeOutExpo",
+                    duration: 1500,
+                    delay: delay
+                  })
+                  delay+=100;
+                  $(item).removeClass( "animate" )
+              })            
+          },
+              offset: '50%'
+        })
+  });
+} 
