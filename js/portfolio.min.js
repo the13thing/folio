@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - JoseSantosPortfolio v5.2.1 ()
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/josesantosportfolio/blob/master/LICENSE)
  */
 
