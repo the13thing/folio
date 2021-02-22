@@ -527,18 +527,6 @@ function fillPortfolioItems () {
     var client = val.client ? '<li><b>Client:</b> ' + val.client + '</li>' : '';
     var category = val.category ? '<li><b>Category:</b> ' + val.category + '</li>' : '';
     var skills = val.skills ? '<li><b>Skills:</b> ' + val.skills + '</li>' : '';
-    var indicatorsArrows = '<a class="carousel-control-prev" href="#' + val.idCarousel + '" role="button" data-slide="prev">' + 
-    '                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>' + 
-    '                     <span class="sr-only">Previous</span>' + 
-    '                   </a>' + 
-    '                   <a class="carousel-control-next" href="#' + val.idCarousel + '" role="button" data-slide="next">' + 
-    '                     <span class="carousel-control-next-icon" aria-hidden="true"></span>' + 
-    '                     <span class="sr-only">Next</span>' + 
-    '                   </a>';
-
-    if (val.carouselItems.length <= 1){
-      indicatorsArrows = '';
-    }
 
     var itemHtml = '<div class="portfolio-modal modal fade" id="' + val.id + '" tabindex="-1" role="dialog" aria-hidden="true">' + 
     '<div class="modal-dialog">' + 
@@ -555,10 +543,16 @@ function fillPortfolioItems () {
 '               <h2 class="text-uppercase">' + val.title + '</h2>' + 
 '               <p class="item-intro text-muted">' + val.category + '</p>' + 
 '               <div id="' + val.idCarousel + '" class="carousel slide" data-ride="carousel" data-interval="false"> ' + 
-'                   <ol class="carousel-indicators">' + carouselHtmlItemsIndicators + 
-'                   </ol>' + 
+val.carouselItems.length>1 ? '<ol class="carousel-indicators">' + carouselHtmlItemsIndicators + '</ol>' : '' + 
 '                   <div class="carousel-inner">' + carouselHtmlItems +
-indicatorsArrows + 
+'                   <a class="carousel-control-prev" href="#' + val.idCarousel + '" role="button" data-slide="prev">' + 
+'                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>' + 
+'                     <span class="sr-only">Previous</span>' + 
+'                   </a>' + 
+'                   <a class="carousel-control-next" href="#' + val.idCarousel + '" role="button" data-slide="next">' + 
+'                     <span class="carousel-control-next-icon" aria-hidden="true"></span>' + 
+'                     <span class="sr-only">Next</span>' + 
+'                   </a>' + 
 '               </div>' + 
 '             </div>' + 
 '               <p>' + val.description + '</p>' + 

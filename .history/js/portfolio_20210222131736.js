@@ -499,7 +499,7 @@ function fillPortfolioItems () {
     },
   ]
   $.each(portfolioModalItems, function (ind, val) {
-    var carouselHtmlItemsIndicators = '', carouselHtmlItems = '', counter = 0;
+    var carouselHtmlItemsIndicators = val.carouselItems.length <= 1 ? '' : '<ol class="carousel-indicators">', carouselHtmlItems = '', counter = 0;
 
     $.each(val.carouselItems, function (ind, carouselItems){
       var indicatorClass = counter === 0 ? ' active' : '';
@@ -508,7 +508,7 @@ function fillPortfolioItems () {
       'span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}span:hover{color:red}</style>';
 
       if (carouselItems.href){
-        carouselHtmlItems += '<div class="carousel-item' + indicatorClass + '">' + 
+        carouselHtmlItems += val.carouselItems.length <= 1 ? '' : '<div class="carousel-item' + indicatorClass + '">' + 
         '<iframe srcdoc="' + style + '<a href=' + carouselItems.href + '?autoplay=1&controls=0><img src=' + carouselItems.img + 
         '><span>▶</span></a>" loading="lazy" width="100%" height="100%" src="' + carouselItems.href + '"' + 
         'frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' + 
@@ -523,22 +523,15 @@ function fillPortfolioItems () {
       counter++;
     });
 
+    if (carouselHtmlItemsIndicators!== '') {
+      carouselHtmlItemsIndicators+= '</ol>'
+    }
+    
+
     var date = val.date ? '<li><b>Date:</b> ' + val.date + '</li>' : '';
     var client = val.client ? '<li><b>Client:</b> ' + val.client + '</li>' : '';
     var category = val.category ? '<li><b>Category:</b> ' + val.category + '</li>' : '';
     var skills = val.skills ? '<li><b>Skills:</b> ' + val.skills + '</li>' : '';
-    var indicatorsArrows = '<a class="carousel-control-prev" href="#' + val.idCarousel + '" role="button" data-slide="prev">' + 
-    '                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>' + 
-    '                     <span class="sr-only">Previous</span>' + 
-    '                   </a>' + 
-    '                   <a class="carousel-control-next" href="#' + val.idCarousel + '" role="button" data-slide="next">' + 
-    '                     <span class="carousel-control-next-icon" aria-hidden="true"></span>' + 
-    '                     <span class="sr-only">Next</span>' + 
-    '                   </a>';
-
-    if (val.carouselItems.length <= 1){
-      indicatorsArrows = '';
-    }
 
     var itemHtml = '<div class="portfolio-modal modal fade" id="' + val.id + '" tabindex="-1" role="dialog" aria-hidden="true">' + 
     '<div class="modal-dialog">' + 
@@ -555,10 +548,16 @@ function fillPortfolioItems () {
 '               <h2 class="text-uppercase">' + val.title + '</h2>' + 
 '               <p class="item-intro text-muted">' + val.category + '</p>' + 
 '               <div id="' + val.idCarousel + '" class="carousel slide" data-ride="carousel" data-interval="false"> ' + 
-'                   <ol class="carousel-indicators">' + carouselHtmlItemsIndicators + 
-'                   </ol>' + 
+carouselHtmlItemsIndicators +
 '                   <div class="carousel-inner">' + carouselHtmlItems +
-indicatorsArrows + 
+'                   <a class="carousel-control-prev" href="#' + val.idCarousel + '" role="button" data-slide="prev">' + 
+'                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>' + 
+'                     <span class="sr-only">Previous</span>' + 
+'                   </a>' + 
+'                   <a class="carousel-control-next" href="#' + val.idCarousel + '" role="button" data-slide="next">' + 
+'                     <span class="carousel-control-next-icon" aria-hidden="true"></span>' + 
+'                     <span class="sr-only">Next</span>' + 
+'                   </a>' + 
 '               </div>' + 
 '             </div>' + 
 '               <p>' + val.description + '</p>' + 

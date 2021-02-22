@@ -275,7 +275,7 @@ function fillPortfolioItems () {
       id:"portfolioModalAbc",
       title:"Aveiro Business Center's Website",
       category:"Development",
-      idCarousel:"carouselAbc",
+      idCarousel:"carouselEspecialDigital",
       carouselItems: [
         {
           img: "img/portfolio/abc/gif.jpg"
@@ -315,7 +315,7 @@ function fillPortfolioItems () {
       id:"portfolioModalRally",
       title:"WRC Rally Portugal 2019",
       category:"Videography/Photography",
-      idCarousel:"carouselRally",
+      idCarousel:"carouselEspecialDigital",
       carouselItems: [
         {
           img: "img/portfolio/rally/1.jpg"
@@ -342,166 +342,17 @@ function fillPortfolioItems () {
           img: "img/portfolio/rally/8.jpg"
         }
        ],
-      description:"After a long, and I mean long hike under the harsh sun of Gois' dusty hills , I settled with a tripod, the camera and a microphone. Chainsaws, clouds of dust, loads of beer... oh and rally cars. This is pure rally!",
+      description:"This was a project where a content management system was needed so the technology I chose was Netlify CMS. I started with a HugoGo template and adapted my components and visual elements accordingly. The website is responsive, multilanguage and it has a user friendly backoffice as well.",
       date:"June 2019",
-      client:"Personal project"
-    },
-    
-    {
-      id:"portfolioModalIntro",
-      title:"Introduction",
-      category:"Videography",
-      idCarousel:"carouselIntroduction",
-      carouselItems: [
-        {
-          img: "img/portfolio/intro/1.jpg",
-          href: "https://www.youtube.com/embed/JhT31GBZVek"
-        }
-       ],
-      description:"I decided to mix some footage that I previously shot with some simple motion graphics and effects for a fast introduction of myself and my skills. From the footage to the song, everything in this video was created from scratch.",
-      date:"May 2019",
-      client:"Personal project"
-    },
-    
-    {
-      id:"portfolioModalNazare",
-      title:"APB Tour Nazare Pro 18",
-      category:"Videography",
-      idCarousel:"carouselAPB",
-      carouselItems: [
-        {
-          img: "img/portfolio/nazare/1.jpg",
-          href: "https://www.youtube.com/embed/aq_niXr01Hg"
-        }
-       ],
-      description:"I spent a day at the beach watching the world bodyboard championship and seeing these crazy tricks I couldn't stop myself from shooting the event.",
-      date:"October 2018",
-      client:"Personal project"
-    },
-    
-    {
-      id:"portfolioModalPhotos",
-      title:"Everyday Photos",
-      category:"Photography",
-      idCarousel:"carouselPhotos",
-      carouselItems: [
-        {
-          img: "img/portfolio/photos/1.jpg"
-        },
-        {
-          img: "img/portfolio/photos/2.jpg"
-        },
-        {
-          img: "img/portfolio/photos/3.jpg"
-        },
-        {
-          img: "img/portfolio/photos/4.jpg"
-        },
-        {
-          img: "img/portfolio/photos/5.jpg"
-        },
-        {
-          img: "img/portfolio/photos/6.jpg"
-        },
-        {
-          img: "img/portfolio/photos/7.jpg"
-        },
-        {
-          img: "img/portfolio/photos/8.jpg"
-        },
-        {
-          img: "img/portfolio/photos/9.jpg"
-        },
-        {
-          img: "img/portfolio/photos/10.jpg"
-        },
-        {
-          img: "img/portfolio/photos/11.jpg"
-        },
-        {
-          img: "img/portfolio/photos/12.jpg"
-        },
-        {
-          img: "img/portfolio/photos/13.jpg"
-        },
-        {
-          img: "img/portfolio/photos/14.jpg"
-        },
-        {
-          img: "img/portfolio/photos/15.jpg"
-        },
-        {
-          img: "img/portfolio/photos/16.jpg"
-        },
-       ],
-      description:"These are some of my everyday photographs, not linked in any way, no caption, just what I see and what the camera captures.",
-      date:"Ongoing",
-      client:"Personal project"
-    },
-    {
-      id:"portfolioModalRealEstate",
-      title:"Real Estate Aerial Videos",
-      category:"Videography",
-      idCarousel:"carouselRealEstate",
-      carouselItems: [
-        {
-          img: "img/portfolio/realEstateAerial/fernbrook.jpg",
-          href: "https://www.youtube.com/embed/zOp1s8_5wpg"
-        },
-        {
-          img: "img/portfolio/realEstateAerial/stonegate.jpg",
-          href: "https://www.youtube.com/embed/ObD4yYa1omE"
-        },
-        {
-          img: "img/portfolio/realEstateAerial/bluehouse.jpg",
-          href: "https://www.youtube.com/embed/xWNbUmRZxwA"
-        },
-        {
-          img: "img/portfolio/realEstateAerial/logcabin.jpg",
-          href: "https://www.youtube.com/embed/v3CJA1Qdglg"
-        },
-        {
-          img: "img/portfolio/realEstateAerial/reservecreek.jpg",
-          href: "https://www.youtube.com/embed/MgGI1CIcE2s"
-        },
-        {
-          img: "img/portfolio/realEstateAerial/rushcreek.jpg",
-          href: "https://www.youtube.com/embed/SpDCE_MFEkc"
-        },
-        {
-          img: "img/portfolio/realEstateAerial/marathon.jpg",
-          href: "https://www.youtube.com/embed/qXdCuHpuIJ4"
-        },
-        {
-          img: "img/portfolio/realEstateAerial/weaver.jpg",
-          href: "https://www.youtube.com/embed/4gIwZLMvjks"
-        },
-        {
-          img: "img/portfolio/realEstateAerial/avalonrun.jpg",
-          href: "https://www.youtube.com/embed/CA34ljyFxx8"
-        },
-        {
-          img: "img/portfolio/realEstateAerial/plymouth.jpg",
-          href: "https://www.youtube.com/embed/VXECuoMpXyI"
-        },
-        {
-          img: "img/portfolio/realEstateAerial/millenium.jpg",
-          href: "https://www.youtube.com/embed/ruvlSwfIOhk"
-        },
-        {
-          img: "img/portfolio/realEstateAerial/hilde.jpg",
-          href: "https://www.youtube.com/embed/gLEgqq01XO0"
-        },
-       ],
-      description:"These are some videos I edit for a real estate agent that shoots the videos on location and then sends them to me for the final editing.",
-      date:"Ongoing",
-      client:"Gopher Aerial"
+      client:"Aveiro Business Center",
+      skills: "HTML5, Tachyons, JS, React, jQuery"
     },
   ]
   $.each(portfolioModalItems, function (ind, val) {
     var carouselHtmlItemsIndicators = '', carouselHtmlItems = '', counter = 0;
 
     $.each(val.carouselItems, function (ind, carouselItems){
+      console.log(this.carouselItems)
       var indicatorClass = counter === 0 ? ' active' : '';
       carouselHtmlItemsIndicators += ' <li data-target="#' + val.idCarousel + '" data-slide-to="' + counter + '" class="'+ indicatorClass + '"></li>';
       var style = '<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}' + 
@@ -515,9 +366,10 @@ function fillPortfolioItems () {
         '</div>';
       }
       else {
-        carouselHtmlItems += '<div class="carousel-item ' +indicatorClass + '">' +
-          '<img class="d-block" src="' +carouselItems.img + '">' + 
-        '</div>'
+        carouselHtmlItems += `
+        <div class="carousel-item ${indicatorClass}">
+          <img class="d-block" src="${carouselItems.img}">
+        </div>`
       }
       
       counter++;
@@ -527,18 +379,6 @@ function fillPortfolioItems () {
     var client = val.client ? '<li><b>Client:</b> ' + val.client + '</li>' : '';
     var category = val.category ? '<li><b>Category:</b> ' + val.category + '</li>' : '';
     var skills = val.skills ? '<li><b>Skills:</b> ' + val.skills + '</li>' : '';
-    var indicatorsArrows = '<a class="carousel-control-prev" href="#' + val.idCarousel + '" role="button" data-slide="prev">' + 
-    '                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>' + 
-    '                     <span class="sr-only">Previous</span>' + 
-    '                   </a>' + 
-    '                   <a class="carousel-control-next" href="#' + val.idCarousel + '" role="button" data-slide="next">' + 
-    '                     <span class="carousel-control-next-icon" aria-hidden="true"></span>' + 
-    '                     <span class="sr-only">Next</span>' + 
-    '                   </a>';
-
-    if (val.carouselItems.length <= 1){
-      indicatorsArrows = '';
-    }
 
     var itemHtml = '<div class="portfolio-modal modal fade" id="' + val.id + '" tabindex="-1" role="dialog" aria-hidden="true">' + 
     '<div class="modal-dialog">' + 
@@ -558,9 +398,15 @@ function fillPortfolioItems () {
 '                   <ol class="carousel-indicators">' + carouselHtmlItemsIndicators + 
 '                   </ol>' + 
 '                   <div class="carousel-inner">' + carouselHtmlItems +
-indicatorsArrows + 
+'                   <a class="carousel-control-prev" href="#' + val.idCarousel + '" role="button" data-slide="prev">' + 
+'                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>' + 
+'                     <span class="sr-only">Previous</span>' + 
+'                   </a>' + 
+'                   <a class="carousel-control-next" href="#' + val.idCarousel + '" role="button" data-slide="next">' + 
+'                     <span class="carousel-control-next-icon" aria-hidden="true"></span>' + 
+'                     <span class="sr-only">Next</span>' + 
+'                   </a>' + 
 '               </div>' + 
-'             </div>' + 
 '               <p>' + val.description + '</p>' + 
 '               <ul class="list-inline">' + 
 date + 
@@ -571,6 +417,7 @@ skills +
 '               <button class="btn btn-primary" data-dismiss="modal" type="button">' + 
 '                 <i class="fas fa-times"></i>' + 
 '                 Close Project</button>' + 
+'             </div>' + 
 '         </div>' + 
 '       </div>' + 
 '     </div>' + 

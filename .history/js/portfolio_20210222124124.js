@@ -445,51 +445,51 @@ function fillPortfolioItems () {
       idCarousel:"carouselRealEstate",
       carouselItems: [
         {
-          img: "img/portfolio/realEstateAerial/fernbrook.jpg",
+          img: "img/portfolio/realEstateAerial\fernbrook.jpg",
           href: "https://www.youtube.com/embed/zOp1s8_5wpg"
         },
         {
-          img: "img/portfolio/realEstateAerial/stonegate.jpg",
+          img: "img/portfolio/realEstateAerial\stonegate.jpg",
           href: "https://www.youtube.com/embed/ObD4yYa1omE"
         },
         {
-          img: "img/portfolio/realEstateAerial/bluehouse.jpg",
+          img: "img/portfolio/realEstateAerial\bluehouse.jpg",
           href: "https://www.youtube.com/embed/xWNbUmRZxwA"
         },
         {
-          img: "img/portfolio/realEstateAerial/logcabin.jpg",
+          img: "img/portfolio/realEstateAerial\logcabin.jpg",
           href: "https://www.youtube.com/embed/v3CJA1Qdglg"
         },
         {
-          img: "img/portfolio/realEstateAerial/reservecreek.jpg",
+          img: "img/portfolio/realEstateAerial\reservecreek.jpg",
           href: "https://www.youtube.com/embed/MgGI1CIcE2s"
         },
         {
-          img: "img/portfolio/realEstateAerial/rushcreek.jpg",
+          img: "img/portfolio/realEstateAerial\rushcreek.jpg",
           href: "https://www.youtube.com/embed/SpDCE_MFEkc"
         },
         {
-          img: "img/portfolio/realEstateAerial/marathon.jpg",
+          img: "img/portfolio/realEstateAerial\marathon.jpg",
           href: "https://www.youtube.com/embed/qXdCuHpuIJ4"
         },
         {
-          img: "img/portfolio/realEstateAerial/weaver.jpg",
+          img: "img/portfolio/realEstateAerial\weaver.jpg",
           href: "https://www.youtube.com/embed/4gIwZLMvjks"
         },
         {
-          img: "img/portfolio/realEstateAerial/avalonrun.jpg",
+          img: "img/portfolio/realEstateAerial\avalonrun.jpg",
           href: "https://www.youtube.com/embed/CA34ljyFxx8"
         },
         {
-          img: "img/portfolio/realEstateAerial/plymouth.jpg",
+          img: "img/portfolio/realEstateAerial\plymouth.jpg",
           href: "https://www.youtube.com/embed/VXECuoMpXyI"
         },
         {
-          img: "img/portfolio/realEstateAerial/millenium.jpg",
+          img: "img/portfolio/realEstateAerial\millenium.jpg",
           href: "https://www.youtube.com/embed/ruvlSwfIOhk"
         },
         {
-          img: "img/portfolio/realEstateAerial/hilde.jpg",
+          img: "img/portfolio/realEstateAerial\hilde.jpg",
           href: "https://www.youtube.com/embed/gLEgqq01XO0"
         },
        ],
@@ -502,6 +502,7 @@ function fillPortfolioItems () {
     var carouselHtmlItemsIndicators = '', carouselHtmlItems = '', counter = 0;
 
     $.each(val.carouselItems, function (ind, carouselItems){
+      console.log(this.carouselItems)
       var indicatorClass = counter === 0 ? ' active' : '';
       carouselHtmlItemsIndicators += ' <li data-target="#' + val.idCarousel + '" data-slide-to="' + counter + '" class="'+ indicatorClass + '"></li>';
       var style = '<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}' + 
@@ -527,18 +528,6 @@ function fillPortfolioItems () {
     var client = val.client ? '<li><b>Client:</b> ' + val.client + '</li>' : '';
     var category = val.category ? '<li><b>Category:</b> ' + val.category + '</li>' : '';
     var skills = val.skills ? '<li><b>Skills:</b> ' + val.skills + '</li>' : '';
-    var indicatorsArrows = '<a class="carousel-control-prev" href="#' + val.idCarousel + '" role="button" data-slide="prev">' + 
-    '                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>' + 
-    '                     <span class="sr-only">Previous</span>' + 
-    '                   </a>' + 
-    '                   <a class="carousel-control-next" href="#' + val.idCarousel + '" role="button" data-slide="next">' + 
-    '                     <span class="carousel-control-next-icon" aria-hidden="true"></span>' + 
-    '                     <span class="sr-only">Next</span>' + 
-    '                   </a>';
-
-    if (val.carouselItems.length <= 1){
-      indicatorsArrows = '';
-    }
 
     var itemHtml = '<div class="portfolio-modal modal fade" id="' + val.id + '" tabindex="-1" role="dialog" aria-hidden="true">' + 
     '<div class="modal-dialog">' + 
@@ -558,7 +547,14 @@ function fillPortfolioItems () {
 '                   <ol class="carousel-indicators">' + carouselHtmlItemsIndicators + 
 '                   </ol>' + 
 '                   <div class="carousel-inner">' + carouselHtmlItems +
-indicatorsArrows + 
+'                   <a class="carousel-control-prev" href="#' + val.idCarousel + '" role="button" data-slide="prev">' + 
+'                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>' + 
+'                     <span class="sr-only">Previous</span>' + 
+'                   </a>' + 
+'                   <a class="carousel-control-next" href="#' + val.idCarousel + '" role="button" data-slide="next">' + 
+'                     <span class="carousel-control-next-icon" aria-hidden="true"></span>' + 
+'                     <span class="sr-only">Next</span>' + 
+'                   </a>' + 
 '               </div>' + 
 '             </div>' + 
 '               <p>' + val.description + '</p>' + 
