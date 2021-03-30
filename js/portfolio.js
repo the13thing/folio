@@ -216,17 +216,21 @@ function fillPortfolioItems () {
       idCarousel:"carouselPGM",
       carouselItems: [
         {
-          href: "https://www.youtube.com/embed/bsZVWNCEoXk",
-          img: "img/portfolio/htd/2.jpg"
+          img: "img/portfolio/pgm/1.jpg"
         }, 
         {
-          href: "https://www.youtube.com/embed/1ozW2BW6WuE",
-          img: "img/portfolio/htd/3.jpg"
+          img: "img/portfolio/pgm/2.jpg"
         },
         {
-          href: "https://www.youtube.com/embed/9wyYHOk7kCE",
-          img: "img/portfolio/htd/4.jpg"
-        }],
+          img: "img/portfolio/pgm/3.jpg"
+        }, 
+        {
+          img: "img/portfolio/pgm/4.jpg"
+        }, 
+        {
+          img: "img/portfolio/pgm/5.jpg"
+        }
+      ],
       description:"Working along with especial.digital, we created an online store for PGM according to their specific needs.",
       date:"December 2019",
       client:"PGM",
@@ -277,9 +281,6 @@ function fillPortfolioItems () {
       category:"Development",
       idCarousel:"carouselAbc",
       carouselItems: [
-        {
-          img: "img/portfolio/abc/gif.jpg"
-        }, 
         {
           img: "img/portfolio/abc/1.jpg"
         }, 

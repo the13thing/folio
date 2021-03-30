@@ -116,7 +116,7 @@ function fillPortfolioItems () {
       subtitle:"Photography"
     },
     {
-      category: "development",
+      category: "videography",
       href:"portfolioModalRealEstate",
       imgSrc:"img/portfolio/realEstateAerial/1.jpg",
       title:"Real Estate Aerial Videos",
@@ -129,7 +129,7 @@ function fillPortfolioItems () {
   var portfolioModalsHtml = "";
 
   $.each(portfolioItems, function (ind, val) {
-    var itemHtml = '<div class="col-lg-4 col-md-6 portfolio-item portfolio-thumbnail all animate' + val.category + '">' +
+    var itemHtml = '<div class="col-lg-4 col-md-6 portfolio-item portfolio-thumbnail all animate ' + val.category + '">' +
       '<a class="portfolio-link" data-toggle="modal" href="#' + val.href + '">' +
       '<div class="portfolio-hover">' +
       '<div class="portfolio-hover-content">' +
@@ -216,17 +216,21 @@ function fillPortfolioItems () {
       idCarousel:"carouselPGM",
       carouselItems: [
         {
-          href: "https://www.youtube.com/embed/bsZVWNCEoXk",
-          img: "img/portfolio/htd/2.jpg"
+          img: "img/portfolio/pgm/1.jpg"
         }, 
         {
-          href: "https://www.youtube.com/embed/1ozW2BW6WuE",
-          img: "img/portfolio/htd/3.jpg"
+          img: "img/portfolio/pgm/2.jpg"
         },
         {
-          href: "https://www.youtube.com/embed/9wyYHOk7kCE",
-          img: "img/portfolio/htd/4.jpg"
-        }],
+          img: "img/portfolio/pgm/3.jpg"
+        }, 
+        {
+          img: "img/portfolio/pgm/4.jpg"
+        }, 
+        {
+          img: "img/portfolio/pgm/5.jpg"
+        }
+      ],
       description:"Working along with especial.digital, we created an online store for PGM according to their specific needs.",
       date:"December 2019",
       client:"PGM",
@@ -527,6 +531,18 @@ function fillPortfolioItems () {
     var client = val.client ? '<li><b>Client:</b> ' + val.client + '</li>' : '';
     var category = val.category ? '<li><b>Category:</b> ' + val.category + '</li>' : '';
     var skills = val.skills ? '<li><b>Skills:</b> ' + val.skills + '</li>' : '';
+    var indicatorsArrows = '<a class="carousel-control-prev" href="#' + val.idCarousel + '" role="button" data-slide="prev">' + 
+    '                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>' + 
+    '                     <span class="sr-only">Previous</span>' + 
+    '                   </a>' + 
+    '                   <a class="carousel-control-next" href="#' + val.idCarousel + '" role="button" data-slide="next">' + 
+    '                     <span class="carousel-control-next-icon" aria-hidden="true"></span>' + 
+    '                     <span class="sr-only">Next</span>' + 
+    '                   </a>';
+
+    if (val.carouselItems.length <= 1){
+      indicatorsArrows = '';
+    }
 
     var itemHtml = '<div class="portfolio-modal modal fade" id="' + val.id + '" tabindex="-1" role="dialog" aria-hidden="true">' + 
     '<div class="modal-dialog">' + 
@@ -546,6 +562,7 @@ function fillPortfolioItems () {
 '                   <ol class="carousel-indicators">' + carouselHtmlItemsIndicators + 
 '                   </ol>' + 
 '                   <div class="carousel-inner">' + carouselHtmlItems +
+indicatorsArrows + 
 '               </div>' + 
 '             </div>' + 
 '               <p>' + val.description + '</p>' + 
